@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class EventsAndMix extends Component
+class Collections extends Component
 {
     public function render()
     {
-        return view('livewire.events-and-mix');
+        return view('livewire.collections');
     }
 }

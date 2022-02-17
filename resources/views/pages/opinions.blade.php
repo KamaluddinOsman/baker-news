@@ -1,4 +1,4 @@
-@extends('layouts.main', ['title' => 'باكر نيوز - أخبار'])
+@extends('layouts.main', ['title' => 'باكر نيوز - رأي'])
 
 @section('content')
     <div class="container">
@@ -8,17 +8,17 @@
                 <i class="ui-arrow-left"></i>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--current">
-                أخبار
+                رأي
             </li>
         </ul>
     </div>
     <div class="main-container container" id="main-container">
         <div class="row">
             <div class="col-lg-10 m-auto blog__content mb-72">
-                <h1 class="page-title">أخبار</h1>
+                <h1 class="page-title">رأي</h1>
                 
-                @livewire( 'post', ['type_id' => 1] )
-                
+                @livewire( 'post', ['type_id' => 3] )
+
             </div>
         </div>
     </div>

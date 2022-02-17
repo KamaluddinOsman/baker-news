@@ -58,7 +58,7 @@
                     <div class="title-wrap title-wrap--line">
                         <h3 class="section-title">حوادث ومنوعات</h3>
                     </div>
-                    @livewire('events-and-mix')
+                    @livewire('collections')
                 </div>
                 <div class="col-md-6">
                     <div class="title-wrap title-wrap--line">

@@ -18,36 +18,36 @@
                 <nav class="flex-child nav__wrap d-none d-lg-block">
                     <ul class="nav__menu">
 
-                        <li class="active">
+                        <li class={{ $title == "باكر نيوز - الرئيسية" ? "active" : "not-active" }}>
                             <a href="/">الرئيسية</a>
                         </li>
 
-                        <li>
+                        <li class={{ $title == "باكر نيوز - أخبار" ? "active" : "not-active" }}>
                             <a href="{{ route('news') }}">أخبار</a>
                         </li>
 
-                        <li>
-                            <a href="/economics">إقتصاد</a>
+                        <li class={{ $title == "باكر نيوز - إقتصاد" ? "active" : "not-active" }}>
+                            <a href="{{ route('economics') }}">إقتصاد</a>
                         </li>
 
-                        <li>
-                            <a href="/opinions">رأي</a>
+                        <li class={{ $title == "باكر نيوز - رأي" ? "active" : "not-active" }}>
+                            <a href="{{ route('opinions') }}">رأي</a>
                         </li>
 
-                        <li>
-                            <a href="/sports">رياضة</a>
+                        <li class={{ $title == "باكر نيوز - رياضة" ? "active" : "not-active" }}>
+                            <a href="{{ route('sports') }}">رياضة</a>
                         </li>
 
-                        <li>
-                            <a href="/collections">حوادث ومنوعات</a>
+                        <li class={{ $title == "باكر نيوز - حوادث ومنوعات" ? "active" : "not-active" }}>
+                            <a href="{{ route('collections') }}">حوادث ومنوعات</a>
                         </li>
 
-                        <li>
-                            <a href="/twitbook">تويتبوك</a>
+                        <li class={{ $title == "باكر نيوز - تويتبوك" ? "active" : "not-active" }}>
+                            <a href="{{ route('twitbook') }}">تويتبوك</a>
                         </li>
-
-                        <li>
-                            <a href="/contact">تواصل معنا</a>
+                        
+                        <li class={{ $title == "باكر نيوز - تواصل معنا" ? "active" : "not-active" }}>
+                            <a href="{{ route('contact') }}">تواصل معنا</a>
                         </li>
 
                     </ul>
