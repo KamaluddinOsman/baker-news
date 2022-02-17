@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    {{-- @include('layouts.header') --}}
+    @include('layouts.header')
     
     <div>
         @yield('content')
