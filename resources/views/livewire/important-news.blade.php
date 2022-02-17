@@ -6,10 +6,10 @@
                     <div class="bottom-gradient"></div>
                     <div class="thumb-text-holder">
                         <h2 class="thumb-entry-title">
-                            <a href="{{route('single-post',$important->id)}}">{{$important->title}}</a>
+                            <a href="#">{{$important->title}}</a>
                         </h2>
                     </div>
-                    <a href="{{route('single-post',$important->id)}}" class="thumb-url"></a>
+                    <a href="#" class="thumb-url"></a>
                 </div>
             </article>
         @endforeach

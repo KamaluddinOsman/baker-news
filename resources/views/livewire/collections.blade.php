@@ -7,18 +7,18 @@
                         <div class="bottom-gradient"></div>
                         <div class="thumb-text-holder thumb-text-holder--1">
                             <h2 class="thumb-entry-title">
-                                <a href="{{route('single-post',$collection->id)}}">{{$collection->title}}</a>
+                                <a href="#">{{$collection->title}}</a>
                             </h2>
                             <ul class="entry__meta">
                                 <li class="entry__meta-author">
-                                    <a href="#">{{$collection->auther}}</a>
+                                    <a href="#">{{$collection->author}}</a>
                                 </li>
                                 <li class="entry__meta-date">
                                     {{$collection->created_at}}
                                 </li>
                             </ul>
                         </div>
-                        <a href="{{route('single-post',$collection->id)}}" class="thumb-url"></a>
+                        <a href="#" class="thumb-url"></a>
                     </div>
                 </article>
             </div>

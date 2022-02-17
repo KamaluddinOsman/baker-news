@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->string('body');
             $table->string('author');
             $table->string('image')->default('default.jpg');
+            $table->boolean('important')->default(0);
             $table->timestamps();
         });
     }

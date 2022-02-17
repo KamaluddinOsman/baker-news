@@ -8,6 +8,8 @@ class SubEconomie extends Component
 {
     public function render()
     {
-        return view('livewire.sub-economie');
+        return view('livewire.sub-economie', [
+            'economics' => \App\Models\Post::where('type_id', 2)->latest()->take(5)->get(),
+        ]);
     }
 }
