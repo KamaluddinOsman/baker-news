@@ -8,6 +8,8 @@ class BreakingNews extends Component
 {
     public function render()
     {
-        return view('livewire.breaking-news');
+        return view('livewire.breaking-news',[
+            'breaking_news' => \App\Models\Post::latest()->take(5)->get(),
+        ]);
     }
 }

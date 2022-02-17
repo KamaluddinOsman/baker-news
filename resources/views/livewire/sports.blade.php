@@ -7,7 +7,7 @@
                         <div class="bottom-gradient"></div>
                         <div class="thumb-text-holder thumb-text-holder--1">
                             <h2 class="thumb-entry-title">
-                                <a href="{{route('single-post',$new_sport->id)}}">{{$new_sport->title}}</a>
+                                <a href="#">{{$new_sport->title}}</a>
                             </h2>
                             <ul class="entry__meta">
                                 <li class="entry__meta-author">
@@ -18,7 +18,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="{{route('single-post',$new_sport->id)}}" class="thumb-url"></a>
+                        <a href="#" class="thumb-url"></a>
                     </div>
                 </article>
             </div>

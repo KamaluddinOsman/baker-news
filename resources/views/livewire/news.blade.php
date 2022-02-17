@@ -6,7 +6,7 @@
                     <div class="col-6">
                         <article class="entry card">
                             <div class="entry__img-holder card__img-holder">
-                                <a href="{{route('single-post',$post->id)}}">
+                                <a href="#">
                                     <div class="thumb-container thumb-70">
                                         <img data-src="{{ asset('images/'.$post->image) }}" src="{{ asset('images/'.$post->image) }}" class="entry__img lazyload" alt="" />
                                     </div>
@@ -15,11 +15,11 @@
                             <div class="entry__body card__body text-right">
                                 <div class="entry__header">
                                     <h2 class="entry__title">
-                                        <a href="{{route('single-post',$post->id)}}">{{$post->title}}</a>
+                                        <a href="#">{{$post->title}}</a>
                                     </h2>
                                     <ul class="entry__meta">
                                         <li class="entry__meta-author">
-                                            <a href="#">{{$post->auther}}</a>
+                                            <a href="#">{{$post->author}}</a>
                                         </li>
                                         <li class="entry__meta-date">
                                             -
