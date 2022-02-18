@@ -3,13 +3,14 @@
         @foreach($importants as $important)
             <article class="entry thumb thumb--size-2">
                 <div class="entry__img-holder thumb__img-holder" style="background-image: url('images/{{$important->image}}')">
+                {{-- <div class="entry__img-holder thumb__img-holder" style="background-image: url({{ asset('images/'). $important->image }})"> --}}
                     <div class="bottom-gradient"></div>
                     <div class="thumb-text-holder">
                         <h2 class="thumb-entry-title">
-                            <a href="#">{{$important->title}}</a>
+                            <a href="{{ route('single-post', ['id' => $important->id]) }}">{{$important->title}}</a>
                         </h2>
                     </div>
-                    <a href="#" class="thumb-url"></a>
+                    <a href="{{ route('single-post', ['id' => $important->id]) }}" class="thumb-url"></a>
                 </div>
             </article>
         @endforeach

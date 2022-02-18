@@ -9,7 +9,7 @@ class Tweetbook extends Component
     public function render()
     {
         return view('livewire.tweetbook', [
-            'new_twit_books' => \App\Models\Post::where('type_id', 6)->latest()->take(1)->get(),
+            'tweets_books' => \App\Models\Post::where('type_id', 6)->latest()->take(1)->get(),
         ]);
     }
 }

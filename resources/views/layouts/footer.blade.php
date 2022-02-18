@@ -23,18 +23,18 @@
                         <div class="row">
                             <div class="col-6">
                                 <ul>
-                                    <li><a href="/">الرئيسية</a></li>
-                                    <li><a href="/news">أخبار</a></li>
-                                    <li><a href="/economics">إقتصاد</a></li>
-                                    <li><a href="/opinions">رأي</a></li>
+                                    <li><a href="{{ route('home') }}">الرئيسية</a></li>
+                                    <li><a href="{{ route('news') }}">أخبار</a></li>
+                                    <li><a href="{{ route('economics') }}">إقتصاد</a></li>
+                                    <li><a href="{{ route('opinions') }}">رأي</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
                                 <ul>
-                                    <li><a href="/sports">رياضة</a></li>
-                                    <li><a href="/collections">حوادث ومنوعات</a></li>
-                                    <li><a href="/twitbook">تويتبوك</a></li>
-                                    <li><a href="/contact">تواصل معنا</a></li>
+                                    <li><a href="{{ route('sports') }}">رياضة</a></li>
+                                    <li><a href="{{ route('collections') }}">حوادث ومنوعات</a></li>
+                                    <li><a href="{{ route('twitbook') }}">تويتبوك</a></li>
+                                    <li><a href="{{ route('contact') }}">تواصل معنا</a></li>
                                 </ul>
                             </div>
                         </div>

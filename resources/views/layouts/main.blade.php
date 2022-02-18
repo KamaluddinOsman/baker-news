@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}" />
 
     <script src="{{asset('js/lazysizes.min.js')}}"></script>
-
 </head>
 
 <body class="bg-light style-default style-rounded">

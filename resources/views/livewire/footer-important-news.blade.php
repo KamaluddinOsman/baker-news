@@ -5,14 +5,14 @@
                 <article class="post-list-small__entry clearfix">
                     <div class="post-list-small__img-holder">
                         <div class="thumb-container thumb-100">
-                            <a href="#">
-                                <img data-src="images/{{$important->image}}" src="images/{{$important->image}}" alt="" class="post-list-small__img--rounded lazyload">
+                            <a href="{{ route('single-post', ['id' => $important->id]) }}">
+                                <img data-src="{{ asset('images').'/'. $important->image }}" src="{{ asset('images/').'/'. $important->image }}" alt="" class="post-list-small__img--rounded lazyload">
                             </a>
                         </div>
                     </div>
                     <div class="post-list-small__body">
                         <h3 class="post-list-small__entry-title">
-                            <a href="#">{{ $important->title }}</a>
+                            <a href="{{ route('single-post', ['id' => $important->id]) }}">{{ $important->title }}</a>
                         </h3>
                         <ul class="entry__meta">
                             <li class="entry__meta-author">

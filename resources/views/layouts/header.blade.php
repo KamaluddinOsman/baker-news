@@ -19,7 +19,7 @@
                     <ul class="nav__menu">
 
                         <li class={{ $title == "باكر نيوز - الرئيسية" ? "active" : "not-active" }}>
-                            <a href="/">الرئيسية</a>
+                            <a href="{{ route('home') }}">الرئيسية</a>
                         </li>
 
                         <li class={{ $title == "باكر نيوز - أخبار" ? "active" : "not-active" }}>

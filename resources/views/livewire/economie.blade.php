@@ -7,7 +7,7 @@
                         <div class="bottom-gradient"></div>
                         <div class="thumb-text-holder thumb-text-holder--1">
                             <h2 class="thumb-entry-title">
-                                <a href="#">{{$new_economic->title}}</a>
+                                <a href="{{ route('single-post', ['id' => $new_economic->id]) }}">{{$new_economic->title}}</a>
                             </h2>
                             <ul class="entry__meta">
                                 <li class="entry__meta-author">
@@ -18,7 +18,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="thumb-url"></a>
+                        <a href="{{ route('single-post', ['id' => $new_economic->id]) }}" class="thumb-url"></a>
                     </div>
                 </article>
             @endforeach

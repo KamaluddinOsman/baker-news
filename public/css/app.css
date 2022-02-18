@@ -1084,6 +1084,9 @@ select {
 .mb-72 {
   margin-bottom: 18rem;
 }
+.mt-40 {
+  margin-top: 10rem;
+}
 .block {
   display: block;
 }
