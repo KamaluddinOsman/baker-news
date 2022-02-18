@@ -7,7 +7,9 @@
         <ul class="newsticker__list">
             @if ( isset($breaking_news) )
                 @foreach($breaking_news as $news)
-                    <li class="newsticker__item"><a href="#" class="newsticker__item-url">{{$news->title}}</a></li>
+                    <li class="newsticker__item">
+                        <a href="{{ route('single-post', ['id' => $news->id]) }}" class="newsticker__item-url">{{$news->title}}</a>
+                    </li>
                 @endforeach
                 @else
                     <li class="newsticker__item">

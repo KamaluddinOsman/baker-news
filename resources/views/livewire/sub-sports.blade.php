@@ -5,7 +5,7 @@
                 <article class="post-list-small__entry">
                     <div class="post-list-small__body">
                         <h3 class="post-list-small__entry-title">
-                            <a href="#">{{$sport->title}}</a>
+                            <a href="{{ route('single-post', ['id' => $sport->id]) }}">{{$sport->title}}</a>
                         </h3>
                     </div>
                 </article>

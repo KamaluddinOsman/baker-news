@@ -6,18 +6,18 @@
                     <article class="post-list-small__entry clearfix">
                         <div class="post-list-small__img-holder">
                             <div class="thumb-container thumb-100">
-                                <a href="#">
+                                <a href="{{ route('single-post', ['id' => $openion->id]) }}">
                                     <img data-src="images/{{$openion->image}}" src="images/{{$openion->image}}" alt="" class="post-list-small__img--rounded lazyload">
                                 </a>
                             </div>
                         </div>
                         <div class="post-list-small__body">
                             <h3 class="post-list-small__entry-title">
-                                <a href="#">{{$openion->title}}</a>
+                                <a href="{{ route('single-post', ['id' => $openion->id]) }}">{{$openion->title}}</a>
                             </h3>
                             <ul class="entry__meta">
                                 <li class="entry__meta-author">
-                                    <a href="#">{{$openion->auther}}</a>
+                                    <a href="#">{{$openion->author}}</a>
                                 </li>
                                 <li class="entry__meta-date">
                                     -

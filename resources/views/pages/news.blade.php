@@ -4,7 +4,7 @@
     <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__url">الرئيسية</a>
+                <a href="{{ route('home') }}" class="breadcrumbs__url">الرئيسية</a>
                 <i class="ui-arrow-left"></i>
             </li>
             <li class="breadcrumbs__item breadcrumbs__item--current">

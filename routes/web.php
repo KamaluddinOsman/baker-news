@@ -16,7 +16,7 @@ use App\Models\Post;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/news', function(){
     return view('pages.news');
@@ -46,6 +46,11 @@ Route::get('/twitbook', function(){
 Route::get('/contact', function(){
     return view('pages.contact');
 })->name('contact');
+
+Route::get('/single-post/{id}', function($id){
+    $post = Post::find($id);
+    return view('pages.single-post', compact('post'));
+})->name('single-post');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
